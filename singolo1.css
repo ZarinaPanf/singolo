@@ -1,0 +1,193 @@
+body {
+    max-width: 1020px;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    padding: 35px 0 0 41px;
+}
+
+.title-text {
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    padding: 0 0 0 41px;
+}
+
+p {
+    width: 219px;
+    height: 128px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: center;
+}
+
+img {
+    width: 59px;
+    height: 59px;
+    float: left;
+    margin: 0px 20px 20px 5px;
+}
+
+.header {
+    height: 90px;
+    background-color: #2d303a;
+    width: 1020px;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.logo {
+    font-family: "Lato";
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 6px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.logo-main {
+    padding: 35px 0 35px 40px;
+}
+
+
+.navigation {
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 6px;
+    color: #ffffff;
+    list-style: none;
+    display: flex;
+}
+
+.navigation__item {
+    padding: 45px 12px 45px 12px;
+}
+
+.colored {
+    color: #f06c64;
+    list-style: none;
+    padding: 45px 12px 45px 0;
+} 
+
+.logo-colored {
+    color: #f06c64;
+}
+.navigation__item::before {
+    content: "\2022";
+    color: #323746; 
+    display: inline-block; 
+    width: 1.1em;
+    margin-left: -6px;  
+  }
+
+.header__line {
+    height: 6px;
+    background-color: #323746;
+    width: 1020px;
+}
+
+.slider {
+    background-color: #f06c64;
+    max-width: 1020px;
+    height: 600px;
+    width: 100%;
+}
+
+.slider-wrapper {
+    display: flex;
+}
+
+.iPhone-Vertical {
+    position: absolute;
+    left: 119px;
+    top: 86px;
+}
+
+.iPhone-Horizontal {
+    position: absolute;
+    left: 369px;
+    top: 171px;
+}
+
+.chev {
+    position: absolute;
+    padding: 42px;
+    top: 342px;
+}
+
+.slider__line {
+    width: 1020px;
+    height: 15px;
+    background-color: #ea676b;
+}
+
+.services__line {
+    width: 1020px;
+    height: 6px;
+    background-color: #ffffff;
+}
+
+.services {
+    width: 1020px;
+    height: 495px;
+    background-color: #f2f2f2;
+    display: flex;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: row;
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 120px;
+    justify-content: space-between;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 121px;
+    justify-content: space-between;
+}
+
+.pen {
+    float: left;
+    margin: 0px 20px 20px 5px;
+}
+
+.bulb {
+    float: left;
+    margin: 0px 20px 86px 0;
+}
