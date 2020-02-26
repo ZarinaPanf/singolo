@@ -7,9 +7,9 @@ h1 {
     line-height: 18px;
     color: #666d89;
     font-family: "Lato";
-    font-weight: 900;
+    font-weight: 700;
     text-align: left;
-    padding: 35px 0 0 41px;
+    padding: 42px 0 0 41px;
 }
 
 .title-text {
@@ -19,8 +19,8 @@ h1 {
     line-height: 30px;
     color: #767e9e;
     font-family: "Lato";
-    font-weight: 300;
-    padding: 0 0 0 41px;
+    font-weight: 200;
+    padding: 0 0 30px 41px;
 }
 
 p {
@@ -30,7 +30,7 @@ p {
     line-height: 22px;
     color: #767e9e;
     font-family: "Lato";
-    font-weight: 400;
+    font-weight: 200;
     text-align: left;
 }
 
@@ -39,15 +39,10 @@ h3 {
     line-height: 18px;
     color: #666d89;
     font-family: "Lato";
-    font-weight: 900;
-    text-align: center;
-}
-
-img {
-    width: 59px;
-    height: 59px;
-    float: left;
-    margin: 0px 20px 20px 5px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .header {
@@ -67,7 +62,7 @@ img {
     font-family: "Lato";
     font-size: 25px;
     font-weight: 700;
-    line-height: 6px;
+    margin-top: -6px;
     color: #ffffff;
     text-align: left;
 }
@@ -85,6 +80,8 @@ img {
     color: #ffffff;
     list-style: none;
     display: flex;
+    margin-top: 17px;
+    margin-right: 27px;
 }
 
 .navigation__item {
@@ -109,7 +106,7 @@ img {
   }
 
 .header__line {
-    height: 6px;
+    height: 5px;
     background-color: #323746;
     width: 1020px;
 }
@@ -117,7 +114,7 @@ img {
 .slider {
     background-color: #f06c64;
     max-width: 1020px;
-    height: 600px;
+    height: 595px;
     width: 100%;
 }
 
@@ -145,7 +142,7 @@ img {
 
 .slider__line {
     width: 1020px;
-    height: 15px;
+    height: 5px;
     background-color: #ea676b;
 }
 
@@ -172,22 +169,84 @@ img {
     justify-content: space-between;
 }
 
+.container1-1 {
+    margin-left: 20px;
+    margin-top: 4px;
+}
+
+.container1-2 {
+    margin-left: 22px;
+    margin-top: 4px;
+}
+
+.container1-3 {
+    margin-left: 22px;
+    margin-top: 4px;
+}
+
 .container2 {
     display: flex;
     flex-direction: row;
     width: 950px;
     margin-left: auto;
     margin-right: auto;
-    height: 121px;
+    height: 120px;
     justify-content: space-between;
+}
+
+.container2-1 {
+    margin-left: 20px;
+    margin-top: 6px;
+}
+
+.container2-2 {
+    margin-left: 22px;
+    margin-top: 6px;
+}
+
+.container2-3 {
+    margin-left: 22px;
+    margin-top: 6px;
 }
 
 .pen {
     float: left;
-    margin: 0px 20px 20px 5px;
+    margin: 5px 0 0 25px;
+    width: 59px;
+    height: 59px;
 }
 
 .bulb {
     float: left;
-    margin: 0px 20px 86px 0;
+    margin: 5px 0 0 20px;
+    width: 59px;
+    height: 59px;
+}
+
+.heart {
+    float: left;
+    margin: 5px 0 0 22px;
+    width: 59px;
+    height: 59px;
+}
+
+.phone {
+    float: left;
+    margin: 8px 0 0 25px;
+    width: 59px;
+    height: 59px;
+}
+
+.bubble {
+    float: left;
+    margin: 7px 0 0 22px;
+    width: 59px;
+    height: 59px;
+}
+
+.star {
+    float: left;
+    margin: 7px 0 0 20px;
+    width: 59px;
+    height: 59px;
 }
