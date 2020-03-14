@@ -1,5 +1,6 @@
 body {
     max-width: 1020px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -9,7 +10,7 @@ h1 {
     font-family: "Lato";
     font-weight: 700;
     text-align: left;
-    padding: 42px 0 0 41px;
+    padding: 45px 0 0 41px;
 }
 
 .title-text {
@@ -20,7 +21,7 @@ h1 {
     color: #767e9e;
     font-family: "Lato";
     font-weight: 200;
-    padding: 0 0 30px 41px;
+    padding: 0 0 26px 41px;
 }
 
 .services-text {
@@ -126,20 +127,20 @@ h1 {
 
 .iPhone-Vertical {
     position: absolute;
-    left: 119px;
-    top: 86px;
+    left: 381px;
+    top: 77px;
 }
 
 .iPhone-Horizontal {
     position: absolute;
-    left: 369px;
-    top: 171px;
+    right: 348px;
+    top: 164px;
 }
 
 .chev {
     position: absolute;
     padding: 42px;
-    top: 342px;
+    top: 335px;
     cursor: pointer;
 }
 
@@ -296,7 +297,7 @@ h1 {
     list-style: none;
     display: flex;
     margin: 0;
-    padding: 11px 0 15px 36px;
+    padding: 7px 0 15px 36px;
 }
 .filter__item {
     border-radius: 6px;
@@ -316,7 +317,7 @@ h1 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 900px;
+    width: 950px;
     margin-left: 31px;
     margin-right: auto;
     height: 205px;
@@ -351,7 +352,7 @@ h1 {
     align-items: center;
 }
 .about__container__photos {
-    padding: 47px 0 8px 41px;
+    padding: 45px 0 6px 33px;
 }
 .about__image {
     padding: 0 5px;
@@ -360,7 +361,7 @@ h1 {
     display: flex;
     flex-direction: row;
     width: 752px;
-    margin-left: 47px;
+    margin-left: 39px;
     margin-right: auto;
     height: 21px;
     justify-content: space-between;
@@ -379,11 +380,11 @@ h1 {
     display: flex;
     flex-direction: row;
     width: 955px;
-    margin-left: 47px;
+    margin-left: 40px;
     margin-right: auto;
     height: 21px;
     justify-content: space-between;
-    align-items: left;
+    text-align: justify;
 }
 .about__container__text p {
     font-size: 12px;
@@ -397,14 +398,14 @@ h1 {
 .about__container__social-icons {
     display: flex;
     flex-direction: row;
-    width: 793px;
+    width: 784px;
     height: 21px;
     justify-content: space-between;
     align-items: left;
     padding: 54px 0 0 0;
 }
 .icons-1 {
-    margin-left: 46px;
+    margin-left: 37px;
     margin-right: auto;
 }
 .icons-2 {
@@ -609,10 +610,16 @@ h1 {
     display: flex;
 }
 .copyright {
-    padding: 32px 0 32px 42px;
+    padding: 18px 0 14px 42px;
+    font-size: 12px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 200;
+    text-align: left;
+    width: 328px;
 }
 .icons {
-    padding: 20px 18px 20px 691px;
+    padding: 20px 18px 20px 455px;
 }
 .footer__icon {
     margin: 0 1px;
