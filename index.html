@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="fonts.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header class="header">
@@ -16,6 +17,7 @@
                 </div>
                 <nav class="header__navigation">
                     <div id="navigation">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <a class="navigation__item active" href="#slider">HOME</a>
                         <a class="navigation__item nonactive" href="#services">SERVICES</a>
                         <a class="navigation__item nonactive" href="#portfolio-wrapper">PORTFOLIO</a>
@@ -23,75 +25,46 @@
                         <a class="navigation__item nonactive" href="#contact-form">CONTACT</a>
                     </div>
                 </nav>
+                <a href="javascript:void(0);" id="icon" onclick="hamburger()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
+            <div class="header__line"></div>
         </header>
-        <div class="header__line"></div>
         <section id="slider">
             <div class="slider-wrapper">
-                <span class="arrow-right">
-                    <img src="assets/images/arrow-right.svg" alt="chevs">
-                </span>
-                <span class="slides slide-1">            
-                    <span class="iphone-vertical">
-                        <img src="assets/images/slide1-vert-iphone.png" alt="iPhone Vertical">
-                    </span>
-                    <span class="iphone-vertical-shadow">
-                        <img src="assets/images/slide1-vert-iphone-shadow.png" alt="iPhone Vertical">
-                    </span>
-                    <span class="screen vertical-screen">
-                        <img src="assets/images/screen.png" alt="iPhone Vertical">
-                    </span>
-                    <span class="iphone-horizontal">
-                        <img src="assets/images/slide1-horiz-iphone.png" alt="iPhone Vertical">
-                    </span>
-                    <span class="iphone-horizontal-shadow">
-                        <img src="assets/images/slide1-horiz-iphone-shadow.png" alt="iPhone Horizontal">
-                    </span>
-                    <span class="screen horizontal-screen">
-                        <img src="assets/images/slide1-horiz-iphone-screen.png" alt="iPhone Horizontal">
-                    </span>               
-                </span>
-                <span class="arrow-left">
-                    <img src="assets/images/arrow-left.svg" alt="chevs">
-                </span>              
-                
-                <span class="slides slide-2">
-                    <span class="iPhone-main">
-                        <span class="iphone-main">
-                            <img src="assets/images/slide2-main-iphone.png" alt="iPhone Main">
-                        </span>
-                        <span class="iphone-main-shadow">
-                            <img src="assets/images/slide2-main-iphone-shadow.png" alt="iPhone Main">
-                        </span>
-                        <span class="screen main-screen">
-                            <img src="assets/images/screen.png" alt="iPhone Main" style="height:354px; width:200px">
-                        </span>
-                    </span>
-                    <span class="iPhone-right">
-                        <span class="iphone-right">
-                            <img src="assets/images/slide2-right-iphone.png" alt="iPhone Main">
-                        </span>
-                        <span class="iphone-right-shadow">
-                            <img src="assets/images/slide2-right-iphone-shadow.png" alt="iPhone Main" style="height:314px; width:156px">
-                        </span>
-                        <span class="screen right-screen">
-                            <img src="assets/images/screen.png" alt="iPhone Main" style="height:217px; width:121px">
-                        </span>
-                    </span>
-                    <span class="iPhone-left">
-                        <span class="iphone-left">
-                            <img src="assets/images/slide2-right-iphone.png" alt="iPhone Main">
-                        </span>
-                        <span class="iphone-left-shadow">
-                            <img src="assets/images/slide2-right-iphone-shadow.png" alt="iPhone Main" style="height:314px; width:156px">
-                        </span>
-                        <span class="screen left-screen">
-                            <img src="assets/images/screen.png" alt="iPhone Main" style="height:217px; width:122px">
-                        </span>
-                    </span>
-                </span>
-                    
-            </span>
+                <img src="assets/images/arrow-right.svg" alt="chevs" class="arrow-right">
+                <div class="slides slide-1">
+                    <div> 
+                        <img src="assets/images/slide1-vert-iphone.png" alt="iPhone Vertical" class="iphone-vertical vertical">
+                        <img src="assets/images/slide1-vert-iphone-shadow.png" alt="iPhone Vertical" class="iphone-vertical-shadow vertical">
+                        <img src="assets/images/screen.png" alt="iPhone Vertical" class="vertical-screen vertical">
+                    </div>    
+                    <div>     
+                        <img src="assets/images/slide1-horiz-iphone.png" alt="iPhone Horizontal" class="iphone-horizontal horizontal">
+                        <img src="assets/images/slide1-horiz-iphone-shadow.png" alt="iPhone Horizontal" class="iphone-horizontal-shadow horizontal">
+                        <img src="assets/images/slide1-horiz-iphone-screen.png" alt="iPhone Horizontal" class="screen horizontal-screen horizontal">            
+                    </div>
+                </div>
+                <img src="assets/images/arrow-left.svg" alt="chevs" class="arrow-left">
+              
+                <div class="slides slide-2">
+                    <div> 
+                        <img src="assets/images/slide2-main-iphone.png" alt="iPhone Main" class="iphone-main">
+                        <img src="assets/images/slide2-main-iphone-shadow.png" alt="iPhone Main" class="iphone-main-shadow">
+                        <img src="assets/images/screen.png" alt="iPhone Main" style="height:354px;" class="screen main-screen">
+                    </div>
+                    <div> 
+                        <img src="assets/images/slide2-right-iphone.png" alt="iPhone Main" class="iphone-right">
+                        <img src="assets/images/slide2-right-iphone-shadow.png" alt="iPhone Main" style="height:314px;" class="iphone-right-shadow">
+                        <img src="assets/images/screen.png" alt="iPhone Main" style="height:217px;" class="screen right-screen">
+                    </div>
+                    <div> 
+                        <img src="assets/images/slide2-right-iphone.png" alt="iPhone Main" class="iphone-left">
+                        <img src="assets/images/slide2-right-iphone-shadow.png" alt="iPhone Main" style="height:314px;"  class="iphone-left-shadow">
+                        <img src="assets/images/screen.png" alt="iPhone Main" style="height:217px;" class="screen left-screen">
+                    </div>
+                </div>
             </div>
         </section>
         <div class="slider__line"></div>
@@ -103,48 +76,60 @@
                 <span>
                     <p class="title-text">Sed efficitur at lectus vestibulum hendrerit. Nullam sagittis convallis vehicula. Cras diam odio, commodo ut ornare tempor, tincidunt et dui. Cras vel arcu ex. Vestibulum non tristique nibh.</p>
                 </span>
-                <div class="layout-3-column">
-                    <div class="container1">
-                        <img src="assets/icons/pen.svg" alt="pen icon" class="pen">
-                            <div class="container1-1">
-                                <h3 class="services-title">Custom Design</h3>
+                <div class="container">
+                            <div class="container-item">
+                                <img src="assets/icons/pen.svg" alt="pen icon" class="pen">
+                                <div class="service">
+                                    <h3 class="services-title">Custom Design</h3>
+                                    <p class="services-text">Nam mollis nulla at diam pharetra cursus. Morbi condimentum, libero a condimentum varius, felis enim cursus. </p>
+                                </div>
+                            </div>
+                            
+                            <div class="container-item">
+                                <img src="assets/icons/bulb.svg" alt="bulb icon" class="bulb">
+                                <div class="service">
+                                    <h3 class="services-title">Inovative ideas</h3>
+                                    <p class="services-text">Nam mollis nulla at diam pharetra cursus. Morbi condimentum, libero a condimentum varius, felis enim cursus. </p>
+                                </div>
+                            </div>
+                            
+                            <div class="container-item">
+                                <img src="assets/icons/heart.svg" alt="heart icon" class="heart"> 
+                                <div class="service">
+                                    <h3 class="services-title">Love Is The Answer</h3>
+                                    <p class="services-text">Nam mollis nulla at diam pharetra cursus. Morbi condimentum, libero a condimentum varius, felis enim cursus. </p>
+                                </div>                                                                                              
+                            </div>
+                            
+                            <div class="container-item">
+                            <img src="assets/icons/phone.svg" alt="phone icon" class="phone">                       
+                                <div class="service">
+                                    <h3 class="services-title">Responsive Layout</h3>
+                                    <p class="services-text">Nam mollis nulla at diam pharetra cursus. Morbi condimentum, libero a condimentum varius, felis enim cursus. </p>
+                                </div>
+                            </div>
+
+                            <div class="container-item">
+                                <img src="assets/icons/bubble.svg" alt="bubble icon" class="bubble">
+                                    <div class="service">
+                                <h3 class="services-title">24/7 Support</h3>
                                 <p class="services-text">Nam mollis nulla at diam pharetra cursus. Morbi condimentum, libero a condimentum varius, felis enim cursus. </p>
+                                    </div>
                             </div>
-                        <img src="assets/icons/bulb.svg" alt="bulb icon" class="bulb">
-                            <div class="container1-2">
-                                <h3 class="services-title">Inovative ideas</h3>
+                        
+                            <div class="container-item">
+                                <img src="assets/icons/star.svg" alt="star icon" class="star">
+                                <div class="service">
+                                <h3 class="services-title">Feel Like A Star</h3>
                                 <p class="services-text">Nam mollis nulla at diam pharetra cursus. Morbi condimentum, libero a condimentum varius, felis enim cursus. </p>
+                                </div>
                             </div>
-                        <img src="assets/icons/heart.svg" alt="heart icon" class="heart"> 
-                            <div class="container1-3">
-                                <h3 class="services-title">Love Is The Answer</h3>
-                                <p class="services-text">Nam mollis nulla at diam pharetra cursus. Morbi condimentum, libero a condimentum varius, felis enim cursus. </p>
-                            </div>
-                    </div>                                                       
-                    
-                    <div class="container2">
-                        <img src="assets/icons/phone.svg" alt="phone icon" class="phone">                       
-                            <div class="container2-1">
-                                <h3 class="services-title">Responsive Layout</h3>
-                                <p class="services-text">Nam mollis nulla at diam pharetra cursus. Morbi condimentum, libero a condimentum varius, felis enim cursus. </p>
-                            </div>
-                        <img src="assets/icons/bubble.svg" alt="bubble icon" class="bubble">
-                            <div class="container2-2">
-                        <h3 class="services-title">24/7 Support</h3>
-                        <p class="services-text">Nam mollis nulla at diam pharetra cursus. Morbi condimentum, libero a condimentum varius, felis enim cursus. </p>
-                            </div>
-                        <img src="assets/icons/star.svg" alt="star icon" class="star">
-                            <div class="container2-3">
-                        <h3 class="services-title">Feel Like A Star</h3>
-                        <p class="services-text">Nam mollis nulla at diam pharetra cursus. Morbi condimentum, libero a condimentum varius, felis enim cursus. </p>
-                            </div>
-                    </div>
                 </div>
         </section>
         <div class="services__line"></div>
         <div id="portfolio-wrapper">
                 <h2 class="portfolio-title">Portfolio</h2>
-                <p class="portfolio-text">Sed nec enim mollis, luctus arcu vel, ultricies neque. Maecenas eleifend purus odio, et tempor.</p>
+                <p class="main-portfolio-text">Sed nec enim mollis, luctus arcu vel, ultricies neque. Maecenas eleifend purus odio, et tempor.</p>
             <div class="portfolio-filter">
                 <ul class="filter">
                     <li class="filter__item button1">All</li>
@@ -154,80 +139,98 @@
                 </ul>
             </div>
             <div id="portfolio">
-                <section class="portfolio__container">
+                <a href="#" class="project-link">
                     <img src="assets/images/1-1.png" alt="image" class="portfolio__image" >
-                
-                    <img src="assets/images/1-2.png" alt="image" class="portfolio__image" >
-                
-                    <img src="assets/images/1-3.png" alt="image" class="portfolio__image" >
-                
-                    <img src="assets/images/1-4.png" alt="image" class="portfolio__image" >
-                </section>
-                <section class="portfolio__container">
-                    <img src="assets/images/2-1.png" alt="image" class="portfolio__image">
-                
-                    <img src="assets/images/2-2.png" alt="image" class="portfolio__image">
-                
-                    <img src="assets/images/2-3.png" alt="image" class="portfolio__image">
-                
-                    <img src="assets/images/2-4.png" alt="image" class="portfolio__image">
-                </section>
-                <section class="portfolio__container">
-                    <img src="assets/images/3-1.png" alt="image" class="portfolio__image">
-                
-                    <img src="assets/images/3-2.png" alt="image" class="portfolio__image">
-                
-                    <img src="assets/images/3-3.png" alt="image" class="portfolio__image">
-                
-                    <img src="assets/images/3-4.png" alt="image" class="portfolio__image">
+                </a>
 
-                </section>
+                <a href="#" class="project-link">
+                    <img src="assets/images/1-2.png" alt="image" class="portfolio__image" >
+                </a>
+
+                <a href="#" class="project-link">
+                    <img src="assets/images/1-3.png" alt="image" class="portfolio__image" >
+                </a>
+
+                <a href="#" class="project-link">
+                    <img src="assets/images/1-4.png" alt="image" class="portfolio__image" >
+                </a>
+
+                <a href="#" class="project-link">
+                    <img src="assets/images/2-1.png" alt="image" class="portfolio__image">
+                </a>
+
+                <a href="#" class="project-link">
+                    <img src="assets/images/2-2.png" alt="image" class="portfolio__image">
+                </a>
+
+                <a href="#" class="project-link">
+                    <img src="assets/images/2-3.png" alt="image" class="portfolio__image">
+                </a>
+
+                <a href="#" class="project-link">
+                    <img src="assets/images/2-4.png" alt="image" class="portfolio__image">
+               </a>
+
+                <a href="#" class="project-link">  
+                    <img src="assets/images/3-1.png" alt="image" class="portfolio__image">
+                </a>
+
+                <a href="#" class="project-link">
+                    <img src="assets/images/3-2.png" alt="image" class="portfolio__image">
+                </a>
+
+                <a href="#" class="project-link">                    
+                    <img src="assets/images/3-3.png" alt="image" class="portfolio__image">
+                </a>
+                
+                <a href="#" class="project-link">
+                    <img src="assets/images/3-4.png" alt="image" class="portfolio__image">
+                </a>
+             
             </div>
         </div>
         <div class="portfolio-line"></div>
         <div id="about">
                 <h2 class="portfolio-title">About Us</h2>
-                <p class="portfolio-text">Duis sit amet mi sit amet sapien condimentum posuere eu vitae purus. 
+                <p class="about-text">Duis sit amet mi sit amet sapien condimentum posuere eu vitae purus. 
                 Vestibulum sit amet dui nec justo egestas lacinia ac cursus nibh. 
                 Nullam sed nisl nunc. Cras accumsan ultricies ante quis varius. 
                 Mauris et velit lectus. Vivamus scelerisque.
                 </p>
                 <section class="about__container__photos">
-                    <img src="assets/images/photo-1.png" alt="image" class="about__image">
-                
-                    <img src="assets/images/photo-2.png" alt="image" class="about__image">
-                
-                    <img src="assets/images/photo-3.png" alt="image" class="about__image">
-                </section>
-                <section class="about__container__names">
-                    <h3>Adam Jensen</h3>
-                    <h3 class="name-space">Desmond Miles</h3>
-                    <h3>Scolara Visari</h3>
-                </section>
-                <section class="about__container__text">
-                    <p class="portfolio-text">Vestibulum sit amet dui nec justo egestas lacinia ac cursus nibh.</p>
-                    <p class="portfolio-text">Vestibulum sit amet dui nec justo egestas lacinia ac cursus nibh.</p>
-                    <p class="portfolio-text">Vestibulum sit amet dui nec justo egestas lacinia ac cursus nibh.</p>
-                </section>
-                <section class="about__container__social-icons">
-                    <div class="icons-1">
-                        <img src="assets/icons/facebook.png" alt="image" class="about__icon">
-                        <img src="assets/icons/google+.png" alt="image" class="about__icon">
-                        <img src="assets/icons/twitter.png" alt="image" class="about__icon">
-                        <img src="assets/icons/linkedin.png" alt="image" class="about__icon">
+                    <div class="about-box">
+                        <img src="assets/images/photo-1.png" alt="image" class="about__image">
+                        <h3 class="about__container__names">Adam Jensen</h3>
+                        <p class="about__container__text portfolio-text">Vestibulum sit amet dui nec justo egestas lacinia ac cursus nibh.</p>
+                        <div class="about-icons">
+                            <img src="assets/icons/facebook.png" alt="image" class="about__icon">
+                            <img src="assets/icons/google+.png" alt="image" class="about__icon">
+                            <img src="assets/icons/twitter.png" alt="image" class="about__icon">
+                            <img src="assets/icons/linkedin.png" alt="image" class="about__icon">
+                        </div>
                     </div>
-                    <div class="icons-2">
-                        <img src="assets/icons/facebook.png" alt="image" class="about__icon">
-                        <img src="assets/icons/google+.png" alt="image" class="about__icon">
-                        <img src="assets/icons/twitter.png" alt="image" class="about__icon">
-                        <img src="assets/icons/linkedin.png" alt="image" class="about__icon">
-                    </div>
-                    <div class="icons-3">
-                        <img src="assets/icons/facebook.png" alt="image" class="about__icon">
-                        <img src="assets/icons/google+.png" alt="image" class="about__icon">
-                        <img src="assets/icons/twitter.png" alt="image" class="about__icon">
-                        <img src="assets/icons/linkedin.png" alt="image" class="about__icon">
-                    </div>
+                    <div class="about-box">
+                        <img src="assets/images/photo-2.png" alt="image" class="about__image">
+                        <h3 class="about__container__names">Desmond Miles</h3>
+                        <p class="about__container__text portfolio-text">Vestibulum sit amet dui nec justo egestas lacinia ac cursus nibh.</p>
+                        <div class="about-icons">
+                            <img src="assets/icons/facebook.png" alt="image" class="about__icon">
+                            <img src="assets/icons/google+.png" alt="image" class="about__icon">
+                            <img src="assets/icons/twitter.png" alt="image" class="about__icon">
+                            <img src="assets/icons/linkedin.png" alt="image" class="about__icon">
+                        </div>
+                    </div> 
+                    <div class="about-box">
+                        <img src="assets/images/photo-3.png" alt="image" class="about__image">
+                        <h3 class="about__container__names">Scolara Visari</h3>
+                        <p class="about__container__text portfolio-text">Vestibulum sit amet dui nec justo egestas lacinia ac cursus nibh.</p>
+                        <div class="about-icons">
+                            <img src="assets/icons/facebook.png" alt="image" class="about__icon">
+                            <img src="assets/icons/google+.png" alt="image" class="about__icon">
+                            <img src="assets/icons/twitter.png" alt="image" class="about__icon">
+                            <img src="assets/icons/linkedin.png" alt="image" class="about__icon">
+                        </div>
+                    </div> 
                 </section>
         </div>
         <div class="about-line"></div>
@@ -235,8 +238,6 @@
         <h2 class="quote-title">Get a Quote</h2>
         <p class="quote-wrapper__text">Aliquam dignissim enim est, sed fringilla nunc molestie ac. 
             Vestibulum id vulputate risus, sit amet consectetur lacus. 
-            Maecenas feugiat lacus augue. Vestibulum mollis dolor quam, 
-            eget venenatis nulla tempor et. Nam consequat congue porta.
         </p>
         <div id="contact-form">
             <div class="contact-form__container1">

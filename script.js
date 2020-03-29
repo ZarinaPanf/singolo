@@ -11,7 +11,7 @@ const screen2 = document.querySelector(".horizontal-screen");
 const screen3 = document.querySelector(".main-screen");
 const onsubmit = document.getElementById("form");
 const filter = document.querySelector(".filter");
-const section_item = document.querySelectorAll(".portfolio__container");
+const section_item = document.querySelectorAll(".project-link");
 const navs = document.querySelectorAll('.navigation__item');
 const portfolio = document.querySelector('#portfolio');
 
@@ -180,3 +180,13 @@ close_button.addEventListener('click', () => {
 })
 }
 
+function hamburger() {
+    var x = document.getElementById("navigation");
+    x.style.width = "278px";
+}
+
+function closeNav() {
+    document.getElementById("navigation").style.width = "0";
+  }
+
+  
